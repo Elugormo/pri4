@@ -5,18 +5,12 @@ import Container from "react-bootstrap/Container";
 export const ChessBoard = ({ positions }) => {
   return (
     <Container>
-      <Table style={{ margin: "15px auto" }} striped bordered hover size="sm">
+      <Table  style={{ margin: "15px auto" }} striped bordered hover size="sm">
         <tbody>
           {positions.map((row) => (
-            <tr>
+            <tr className="row">
               {row.map((piece, parityIdx) => (
-                <td
-                  style={
-                    parityIdx % 2 === 0
-                      ? { background: "red" }
-                      : { background: "green" }
-                  }
-                >
+                <td className="cell">
                   <img src={piece.src} />
                 </td>
               ))}
