@@ -1,23 +1,250 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { ChessBoard } from "./ChessBoard";
+
+let positions = [
+  [
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bb.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bk.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+  ],
+  [
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bn.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bb.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+    },
+  ],
+  [
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+  ],
+  [
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+  ],
+  [
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+  ],
+  [
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+  ],
+  [
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+  ],
+  [
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+    },
+    {
+      src: null,
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/wr.png",
+    },
+    {
+      src:
+        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/wr.png",
+    },
+    {
+      src: null,
+    },
+  ],
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ChessBoard positions={positions} />
     </div>
   );
 }
