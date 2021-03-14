@@ -1,26 +1,24 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { ChessBoard } from "./ChessBoard";
+import { Header } from "./Header";
 
 let positions = [
   [
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bb.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bb.png",
     },
     {
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bk.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bk.png",
     },
     {
       src: null,
@@ -29,41 +27,33 @@ let positions = [
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
   ],
   [
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bp.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bp.png",
     },
     {
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bn.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bn.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bb.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bb.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bp.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bp.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bp.png",
     },
   ],
   [
@@ -74,15 +64,13 @@ let positions = [
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bp.png",
     },
     {
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/bp.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/bp.png",
     },
     {
       src: null,
@@ -105,12 +93,10 @@ let positions = [
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
       src: null,
@@ -124,8 +110,7 @@ let positions = [
   ],
   [
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
       src: null,
@@ -151,19 +136,16 @@ let positions = [
   ],
   [
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
       src: null,
@@ -186,33 +168,27 @@ let positions = [
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
   ],
   [
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
       src: null,
@@ -221,19 +197,16 @@ let positions = [
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/br.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/br.png",
     },
     {
       src: null,
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/wr.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/wr.png",
     },
     {
-      src:
-        "https://images.chesscomfiles.com/chess-themes/pieces/neo/100/wr.png",
+      src: "https://images.chesscomfiles.com/chess-themes/pieces/neo/80/wr.png",
     },
     {
       src: null,
@@ -244,6 +217,7 @@ let positions = [
 function App() {
   return (
     <div className="App">
+      <Header />
       <ChessBoard positions={positions} />
     </div>
   );
