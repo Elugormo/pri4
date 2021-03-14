@@ -1,0 +1,19 @@
+.table th,
+.table td {
+  border-top: none;
+  font-weight: bold;
+  color: white;
+}
+
+.main-container {
+  width: unset;
+  margin: 15px auto;
+}
+
+.cell {
+  width: 100px;
+}
+.table-data {
+  text-align: center;
+  width: 100px;
+}
