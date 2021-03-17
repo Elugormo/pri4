@@ -1,9 +1,10 @@
 import "./App.css";
 import { ChessBoard } from "./components/ChessBoard/ChessBoard";
 import { Header } from "./components/Header/Header";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 import { LinkFotter } from "./components/LinkFotter";
+import { ChartBoard } from "./components/ChartBoard";
 
 let positions = [
   [
@@ -222,7 +223,10 @@ function App() {
       <Header />
       <ChessBoard positions={positions} />
       <Container className="footer">
-        <LinkFotter />
+        <Row className="align-items-center">
+          <ChartBoard />
+          <LinkFotter />
+        </Row>
       </Container>
     </div>
   );

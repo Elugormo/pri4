@@ -8,10 +8,10 @@ export const SignInModal = ({ show, hide }) => {
     <div>
       <Modal show={show} onHide={hide}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Sign In Form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <Form method="post" action="/index.html">
             <Form.Row>
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Email</Form.Label>
@@ -30,8 +30,8 @@ export const SignInModal = ({ show, hide }) => {
             </Form.Group>
 
             <Form.Group controlId="formGridAddress2">
-              <Form.Label>Address 2</Form.Label>
-              <Form.Control placeholder="Apartment, studio, or floor" />
+              <Form.Label>Age</Form.Label>
+              <Form.Control placeholder="Your age" required type="number" />
             </Form.Group>
 
             <Form.Row>
@@ -41,21 +41,19 @@ export const SignInModal = ({ show, hide }) => {
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridState">
-                <Form.Label>State</Form.Label>
+                <Form.Label>Level</Form.Label>
                 <Form.Control as="select" defaultValue="Choose...">
-                  <option>Choose...</option>
-                  <option>...</option>
+                  <option>Novice</option>
+                  <option>Master</option>
+                  <option>Grandmaster</option>
+                  <option>International Grandmaster</option>
                 </Form.Control>
-              </Form.Group>
-
-              <Form.Group as={Col} controlId="formGridZip">
-                <Form.Label>Zip</Form.Label>
-                <Form.Control />
               </Form.Group>
             </Form.Row>
 
             <Form.Group id="formGridCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
+              <Form.Check type="radio" label="Male" />
+              <Form.Check type="radio" label="Female" />
             </Form.Group>
 
             <Button variant="primary" type="submit">
