@@ -5,6 +5,7 @@ import { Container, Row } from "react-bootstrap";
 
 import { LinkFotter } from "./components/LinkFotter";
 import { ChartBoard } from "./components/ChartBoard";
+import { Timer } from "./components/Timer";
 
 let positions = [
   [
@@ -226,6 +227,7 @@ function App() {
         <Row className="align-items-center">
           <ChartBoard />
           <LinkFotter />
+          <Timer />
         </Row>
       </Container>
     </div>
